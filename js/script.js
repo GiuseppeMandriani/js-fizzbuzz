@@ -8,24 +8,33 @@
  * 
  * 
  */
+ var number3 = [];
 
-var number;
+ var number5 = [];
+
+ var number3_5 = [];
 
 for (var i = 1; i <= 100; i++) {
     console.log([i]);
-    if (i % 3 == 0) {
-    // var i = ('Fizz')
-    console.log('Fizz');
-    } else if (i % 5 == 0) {
-    console.log('Buzz');
-    } 
-    
-    if ( (i % 3 == 0) && (i % 5 == 0) ) {
-        console.log('FizzBuzz');
 
+    if (i % 3 == 0){
+        number3.push(i);
+        
     }
     
+    if (i % 5 == 0){
+        number5.push(i);
+        
+    } 
+    
+    if ((i % 5 == 0) && (i % 3 == 0)){
+        number3_5.push(i);
 
+        
+    }
 }
 
+console.log(number3);
+console.log(number5);
+console.log(number3_5);
 
